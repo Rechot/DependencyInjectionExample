@@ -1,0 +1,15 @@
+# Generated files
+out/
+
+# Log files
+*.log
+
+#IntelliJ
+*.iml
+.idea/*
+
+#Visual Studio Code settings
+.vscode/*
+
+#Version control
+vcs.xml
