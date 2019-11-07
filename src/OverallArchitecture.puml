@@ -1,0 +1,20 @@
+@startuml
+Class Account
+Interface AccountRepository
+Interface AccountStorage
+Class InMemoryStorageTestImpl
+Class UseCaseTransferMoney
+Class DataBase
+Class Main
+
+Account <-- AccountStorage
+Account <-- AccountRepository
+
+InMemoryStorageTestImpl ..|> AccountRepository
+InMemoryStorageTestImpl ..|> AccountStorage
+
+UseCaseTransferMoney o-- InMemoryStorageTestImpl
+
+Main *-- InMemoryStorageTestImpl
+Main *-- UseCaseTransferMoney
+@enduml
